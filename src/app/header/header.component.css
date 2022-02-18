@@ -1,0 +1,31 @@
+.navbar{
+    background-color:#ecececa1;
+}
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    padding-left:580px;
+  }
+navbar-light .navbar-nav .nav-link{
+    color:#000000;
+    font-size: 18px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(0,0,0,.55);
+    text-decoration: overline;
+    text-decoration-color: blue;
+}
+.get-started-btn {
+    color: #000000;
+    border-radius: 4px;
+   /* padding: 10px 25px 8px 25px;*/
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    display: inline-block;
+    border: 2px solid white;
+
+  }

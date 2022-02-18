@@ -1,0 +1,7 @@
+.about{
+    position: absolute;
+    top:50%;
+    left: 140px;
+    transform: translate(40%,-50%);
+  
+}

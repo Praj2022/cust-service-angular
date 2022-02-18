@@ -1,0 +1,60 @@
+
+<section class="home">
+  
+ <div class="homecontent" data-aos="fade-up">
+     <div class="row">
+       <div class="col-lg-6">
+      <h2><span>I'm looking for..</span></h2><br>
+      <form class="form-inline ">    
+        <input class="form-control" type="search" placeholder="Enter a Job Description" aria-label="Search"> 
+      </form>
+      </div>
+      <div class="col-lg-6">
+        <br><br><br>
+        <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i>  Search</button>
+    </div>
+        <form class="form-inline "> 
+          <br>
+          <input type="checkbox" name="part" value="full">   Full Time  
+          <input type="checkbox" name="part" value="part">   Part Time/Casual/Freelance 
+          <select name="city" id="city">
+            <option value="loc">Select your location <i class="bi bi-chevron-down"></i></option>
+            <option value="pune">Pune</option>
+            <option value="satara">Satara</option>
+            <option value="mumbai">Mumbai</option>
+          </select>
+          
+          <br><br><br>
+        &nbsp;<button class="btn btn-primary" (click)="newChange()" style="margin-left:280px;" type="submit">Register</button>
+      </form>
+      
+     
+    </div><br>
+
+    <div class="contents">
+    <div class="row">
+      <div class="col-lg-2">
+      </div>
+      <div class="col-lg-8" style="text-align: center;">
+        <p>We're leaders in</p>
+        <h2 >Creative Digital Recruitment<br>
+          <b style="color: blue; font-size: 20px;">_________</b>
+        </h2>
+        <p>Based in Surry Hills,the creative hub of Sydney we are surrounded by creativity <br>
+          and that reflects on the type of jobs we recruit for.
+        </p>
+        <button style="color: blue;" >
+         <a routerLink="aboutus"></a>
+          <router-outlet></router-outlet>
+          FIND OUT MORE ABOUT US</button>
+  
+      </div>
+       <div class="col-lg-2">
+      </div>
+    </div>
+      </div>
+
+  </div>
+
+
+</section>

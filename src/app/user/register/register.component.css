@@ -1,0 +1,27 @@
+.register{
+    position: absolute;
+    top:50%;
+    left:50px;
+    transform: translate(50%,-50%);
+}
+.head {
+    background-color: cornflowerblue;
+    margin-top: 0px;
+}
+form {
+    display: grid;
+    padding: 1em;
+    background: #f9f9f9;
+    border: 1px solid #c1c1c1;
+    margin: 2rem auto 0 auto;
+    width: 600px;
+    padding: 1em;
+  }
+  form input {
+    background: #fff;
+    border: 1px solid #9c9c9c;
+  }
+  img{
+      height: 120px;
+      width:120px
+  }

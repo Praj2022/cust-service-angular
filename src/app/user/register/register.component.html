@@ -1,0 +1,45 @@
+ <section class="register">
+    <form class="form1" (ngSubmit)="savedata()">
+        <div style="background-color:rgba(61, 86, 230, 0.87); ;">
+        <h5 style="color:white">Register
+            <button style="margin-left:440px;"type="submit" (click)="cancle()">X</button>
+           </h5>
+        
+        </div>
+        <div class="head">
+        </div><br>
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="../../assets/logo1.png" >
+                
+            </div>
+            <div class="col-sm-9">
+
+                <input type="text" placeholder="First Name" name="firstname"  [(ngModel)]="formdata.firstname ">&nbsp;&nbsp;
+                <input type="text" placeholder="Last Name" name="lastname" [(ngModel)]="formdata.lastname"><br><br>
+                 <input style="width: 400px;"  type="email" placeholder="Email" name="email" [(ngModel)]="formdata.email"><br><br>
+                <input style="width: 400px;" type="phone" placeholder="(541) 754-3010" name="phone" [(ngModel)]="formdata.phone"><br><br>
+                <select  style="width: 400px;" name="city" id="city">
+                    <option value="state">State<i class="bi bi-chevron-down"></i></option>
+                    <option value="Maharastra" [(ngModel)]="formdata.state ">Maharastra</option>
+                    <option value="Uttar" [(ngModel)]="formdata.state">Uttar Pradesh</option>
+                    <option value="Rajashtan" [(ngModel)]="formdata.state ">Rajashtan</option>
+                  </select><br><br>
+                  <select  style="width: 400px;" name="city" id="city">
+                    <option value="cou"  [(ngModel)]="formdata.country ">Country<i class="bi bi-chevron-down"></i></option>
+                    <option value="India" [(ngModel)]="formdata.country ">India</option>
+                    <option value="Australia" [(ngModel)]="formdata.country ">Australia</option>
+                    <option value="Kuwait" [(ngModel)]="formdata.country ">Kuwait</option>
+                    <option value="Canda" [(ngModel)]="formdata.country">Canda</option>
+                  </select><br><br>
+                  <input style="width: 400px;" type="address" placeholder="Address" name="tags" [(ngModel)]="formdata.address"><br><br>
+                  <input style="width: 400px;"  type="tags" placeholder="tags" name="tags" [(ngModel)]="formdata.tags"><br><br>
+                  <input type="checkbox" name="new" value="new"> subscribe to newsletter<br><br>
+                  <button class="btn btn-light" type="submit" style="margin-left :160px;">Cancel</button>&nbsp;&nbsp;
+                  <button class="btn btn-primary" type="submit" value="submit" (click)="savedata()" >Submit</button>
+                </div>
+        </div>
+        
+      </form>
+      
+ </section>
